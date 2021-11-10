@@ -1,0 +1,12 @@
+.collection_img{
+    padding: 80px 0 80px 0;
+    float: left;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background: url('https://i.ibb.co/9vMDP5d/banner2.jpg') center top no-repeat fixed;
+    margin: 0 0 80px0;
+    background-size: cover;
+}

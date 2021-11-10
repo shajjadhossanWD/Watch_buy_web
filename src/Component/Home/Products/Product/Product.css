@@ -1,0 +1,19 @@
+.buttonGrp{
+    color: #bdab8d;
+    border: 2px solid #bdab8d;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.buttonGrp:hover{
+    background-color: #bdab8d;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.5s ease-out;
+}
+.img{
+    width: 80%;
+}

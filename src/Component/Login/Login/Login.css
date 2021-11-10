@@ -1,0 +1,7 @@
+.login_div{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://i.ibb.co/gM4Dz6c/pile-of-watches-e1635261435238.jpg');    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px;
+}

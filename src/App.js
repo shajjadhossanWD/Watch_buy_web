@@ -1,23 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './Component/Home/Home/Home';
+import Allwatch from './Component/AllWatch/AllWatch/Allwatch';
+import Login from './Component/Login/Login/Login';
+import Register from './Component/Login/Register/Register';
+import AuthProvider from './Context/AuthProvider';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
+import Purchase from './Component/Purchase/Purchase';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <AuthProvider>
+      <Router>
+          <Switch>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+            <Route path="/all_watch">
+              <Allwatch></Allwatch>
+            </Route>
+            <Route path="/login">
+             <Login></Login>
+             </Route>
+             <Route path="/register">
+              <Register></Register>
+             </Route>
+             <PrivateRoute path="/purchase/:productName">
+               <Purchase></Purchase>
+             </PrivateRoute>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+          </Switch>
+       </Router>
+       </AuthProvider>
     </div>
   );
 }
