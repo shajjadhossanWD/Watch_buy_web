@@ -8,6 +8,7 @@ import Register from './Component/Login/Register/Register';
 import AuthProvider from './Context/AuthProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import Purchase from './Component/Purchase/Purchase';
+import Dashboard from './Component/Dashboard/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
              </Route>
              <PrivateRoute path="/purchase/:productName">
                <Purchase></Purchase>
+             </PrivateRoute>
+             <PrivateRoute path="/dashboard">
+               <Dashboard></Dashboard>
              </PrivateRoute>
             <Route exact path="/">
               <Home></Home>
