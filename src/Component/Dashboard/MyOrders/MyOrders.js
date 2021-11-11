@@ -10,7 +10,7 @@ const MyOrders = () => {
 
     const email = user.email;
     useEffect(()=>{
-        fetch(`http://localhost:5000/OrderedProduct/${email}`)
+        fetch(`https://floating-beach-19439.herokuapp.com/OrderedProduct/${email}`)
         .then(res => res.json())
         .then(result => {
            setOrders(result)
@@ -20,7 +20,7 @@ const MyOrders = () => {
     const handleDelete =(id)=>{
         const confirmDelete = window.confirm('Are you sure, you want to delete this Orders? Please Check it again')
         if(confirmDelete){
-           fetch(`http://localhost:5000/OrderedProduct/${id}`,{
+           fetch(`https://floating-beach-19439.herokuapp.com/OrderedProduct/${id}`,{
                method: "DELETE",
                headers: {"content-type": "application/json"}
              })

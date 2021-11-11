@@ -11,7 +11,7 @@ const MakeAdmin = () => {
 
     const handleAddAdmin = (e) =>{
         const user = {email}
-        fetch('http://localhost:5000/users/admin', {
+        fetch('https://floating-beach-19439.herokuapp.com/users/admin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

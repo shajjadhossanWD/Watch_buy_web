@@ -1,0 +1,17 @@
+.Shipped_btn{
+  background-color: #b4a282;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 7px;
+  margin-right: 5px;
+}
+.approve_btn{
+    background-color: rgb(32, 32, 51);
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 7px;
+    margin-left: 15px;
+    cursor: pointer;
+}

@@ -13,7 +13,7 @@ const PurchaseModal = (props) => {
     const [SingleProducts, setSingleProducts] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/watches')
+        fetch('https://floating-beach-19439.herokuapp.com/watches')
         .then(res => res.json())
         .then(data => {
             const WatchData = data.find(product => product.name === productName)
@@ -23,7 +23,7 @@ const PurchaseModal = (props) => {
 
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post("http://localhost:5000/OrderedProduct", data)
+        axios.post("https://floating-beach-19439.herokuapp.com/OrderedProduct", data)
        .then(res => {
            if(res.data.insertedId){
                alert('added successfully')
