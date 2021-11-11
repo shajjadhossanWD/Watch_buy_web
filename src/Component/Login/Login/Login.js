@@ -1,4 +1,5 @@
 import React from 'react';
+import { ButtonGroup } from 'react-bootstrap';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
 import Header from '../../CommonParts/Header/Header';
@@ -23,6 +24,10 @@ const handleLogIn = e =>{
     loginUser(loginData.email, loginData.password, location, history);
     e.preventDefault();
 }
+
+// const handleGoogleBtn = () =>{
+//   signInWithGoogle(location, history)
+// }
 
 
     return (
@@ -55,6 +60,7 @@ const handleLogIn = e =>{
            <Link to="/register">
                <p  style={{marginTop: '20px'}}>New to JWATCH? Please Register..</p>
            </Link>
+           {/* <ButtonGroup onClick={handleGoogleBtn} className="btn btn-primary">SignIn Whit Google</ButtonGroup> */}
           </div>
           <div className="col-lg-6">
               <img src="https://i.ibb.co/S09BXkR/silver-watch-PKXLPT7.png" style={{width: '50%'}} alt="" />

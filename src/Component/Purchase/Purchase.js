@@ -8,7 +8,7 @@ import './Purchase.css';
 const Purchase = () => {
     const {productName} = useParams();
     const [SingleProducts, setSingleProducts] = useState([]);
-    const [modalShow, setModalShow] = React.useState(false);
+    const [modalShow, setModalShow] = useState(false);
 
 
     useEffect(()=>{

@@ -1,9 +1,8 @@
 import React from 'react';
 import { ButtonGroup, Card, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
-const Order = ({order}) => {
-    const {name, itemsImg, bookingItems, Price} = order
+const Order = ({order, handleDelete}) => {
+    const {name, itemsImg, bookingItems, Price, _id, status } = order
     return (
         <Col>
         <Card as="div">
@@ -16,9 +15,10 @@ const Order = ({order}) => {
              User Name: {name}
             </Card.Text>
             <Card.Text>$ {Price} Only</Card.Text>
-            <Link to={`/purchase/${name}`}>
-            <ButtonGroup className="buttonGrp">Buy Now</ButtonGroup>
-            </Link>          
+              {
+                status? <ButtonGroup className="pending_btn">Approved</ButtonGroup>:<ButtonGroup className="pending_btn">Pending..</ButtonGroup>
+              }
+            <ButtonGroup style={{marginLeft: '25px'}} onClick={() => handleDelete(_id)} className="buttonGrp">Delete</ButtonGroup>
             </Card.Body>
         </Card>
       </Col>
