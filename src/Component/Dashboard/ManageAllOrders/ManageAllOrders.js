@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
 import ManageOrder from './ManageOrder/ManageOrder';
+import './ManageAllOrders.css';
 
 const ManageAllOrders = () => {
    const [data, setData] = useState([]);
@@ -62,7 +63,7 @@ const ManageAllOrders = () => {
                <h1 className="text-white">MANAGE ALL ORDERED PRODUCTS</h1>
            </div>
            <div>
-           <h1 className="my-5"> ALL ORDERED PRODUCTS</h1>
+           <h1 className="my-5 cards_title"> ALL <span>ORDERED PRODUCTS</span></h1>
            <Row xs={1} md={2} lg={3} className="g-4 container mx-auto">
                 {
                     data.map(manageOrder => <ManageOrder

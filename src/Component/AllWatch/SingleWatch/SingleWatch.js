@@ -1,12 +1,13 @@
 import React from 'react';
 import { ButtonGroup, Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './SingleWatch.css';
 
 const SingleWatch = ({watch}) => {
     const {name, img, short_des, price} = watch;
     return (
       <Col>
-        <Card as="div">
+        <Card as="div" className="watch_card">
          <div className="img_div">
            <Card.Img variant="top" src={img} className="img"/>
          </div>

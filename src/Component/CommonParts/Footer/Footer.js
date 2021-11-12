@@ -38,9 +38,9 @@ const Footer = () => {
              <div className="col-lg-3">
               <h2>Contact Info</h2>
               <p>We are always available for provide you our best services. Please Contact us . Contact Information given below</p>
-              <p><i class="fas fa-map-marker-alt"></i> Dhanmondi-1243, Dhaka Bangladesh</p>
-              <p><i class="fas fa-envelope"></i>shajjadhossan111@gmail.com</p>
-              <p><i class="fas fa-envelope"></i>+880 135 3123 532</p>
+              <p><i className="fas fa-map-marker-alt"></i> Dhanmondi-1243, Dhaka Bangladesh</p>
+              <p><i className="fas fa-envelope"></i>shajjadhossan111@gmail.com</p>
+              <p><i className="fas fa-envelope"></i>+880 135 3123 532</p>
              </div>
          </div>
          <p className="py-4 text-white">copyright@shajjadhossan.com</p>

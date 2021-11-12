@@ -1,0 +1,19 @@
+.cards_title span{
+   color: #ac9061;
+}
+.deleteBtn{
+    background-color: transparent;
+    padding: 8px 10px;
+    color: #ac9061;
+    border-radius: 10px;
+    border: 2px solid #ac9061;
+}
+
+@media (max-width: 667px){
+    .deleteBtn{
+        margin-top: 10px;
+    }
+    .Shipped_btn{
+        margin-top: 10px;
+    }
+}

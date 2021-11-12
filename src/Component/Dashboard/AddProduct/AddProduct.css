@@ -1,0 +1,17 @@
+.addProduct{
+    width: 70%;
+}
+
+@media (max-width:667px){
+    .addProduct{
+        width: 100%;
+    }
+    .inputData{
+        width: 100%;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+ 
+}

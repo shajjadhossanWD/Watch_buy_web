@@ -25,7 +25,7 @@ const ManageOrder = ({manageOrder, handleShippedBtn, handleOrderDelete}) => {
 
                 </>
               }
-            <ButtonGroup onClick={()=> handleOrderDelete(_id)} style={{marginLeft: '25px'}} className="buttonGrp">Delete</ButtonGroup>
+            <ButtonGroup onClick={()=> handleOrderDelete(_id)} style={{marginLeft: '25px'}} className="deleteBtn">Delete</ButtonGroup>
             </Card.Body>
         </Card>
       </Col>

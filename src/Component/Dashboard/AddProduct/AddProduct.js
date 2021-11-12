@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import './AddProduct.css';
 
 const AddProduct = () => {
 
@@ -18,7 +19,7 @@ const AddProduct = () => {
         <div>
             <div className="dashboard_div">
                 <h1 className="text-white">Add Your New Product</h1>
-                <div className="w-75 mx-auto">
+                <div className="addProduct mx-auto">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <input className="inputData" placeholder="your product name" {...register("name")}/>
                     <textarea className="inputData" placeholder="your product short description" {...register("short_des")}/>
