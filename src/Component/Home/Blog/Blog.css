@@ -1,0 +1,9 @@
+.img_div{
+    display: block;
+    overflow: hidden;
+}
+.img_div:hover .img_blog{
+    display: inline;
+    transform: scale(1.2);
+    transition: 0.7s ease-in-out;
+}

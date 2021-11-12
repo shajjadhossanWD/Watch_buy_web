@@ -1,0 +1,17 @@
+.review_card{
+    border-radius: 20px;
+}
+
+.review_card:hover{
+    background-color: rgb(41, 40, 40);
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+.review_img{
+   margin-top: 30px;
+}
+.imgReview{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}

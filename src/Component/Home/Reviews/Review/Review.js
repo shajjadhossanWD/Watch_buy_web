@@ -1,14 +1,15 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 import Rating from 'react-rating';
+import './Review.css';
 
 const Review = ({review}) => {
     const {userName, img, description, ratings} = review;
     return (
       <Col>
-        <Card as="div">
-         <div className="img_div">
-           <Card.Img variant="top" src={img} className="img"/>
+        <Card as="div" className="review_card">
+         <div className=" review_img">
+           <Card.Img variant="top" src={img} className="imgReview"/>
          </div>
           <Card.Body>
             <Card.Title>{userName}</Card.Title>

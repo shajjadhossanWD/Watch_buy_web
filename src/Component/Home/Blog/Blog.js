@@ -1,11 +1,13 @@
 import React from 'react';
 import { ButtonGroup, Card, Col, Row } from 'react-bootstrap';
-
+import './Blog.css';
 const Blog = () => {
     return (
         <div className="container my-5">
-            <p><b>HAPPENINGS AROUND </b></p>
-            <h1>OUR BLOG</h1>
+           <div className="cards_title">
+           <p><b>HAPPENINGS AROUND </b></p>
+            <h1>OUR<span> BLOG</span></h1>
+           </div>
             <Row xs={1} md={2} lg={3} className="g-4">
 
             {/* ----------------card 1 ---------------- */}

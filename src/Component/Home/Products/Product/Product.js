@@ -8,7 +8,7 @@ const Product = ({product}) => {
 
     return (
       <Col>
-        <Card as="div">
+        <Card as="div" className="home_card">
          <div className="img_div">
            <Card.Img variant="top" src={img} className="img"/>
          </div>
