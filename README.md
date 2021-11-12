@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Project Title
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It's a React Js Single Pages Dynamic Watch selling Related website, And the website name is JWATCH . 
 
-## Available Scripts
 
-In the project directory, you can run:
+## Demo
+Our website link provide here https://watch-web-2cd74.web.app/
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Color Reference
+Using this color of our website
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Example Color | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
+| Example Color | ![#FF6347](https://via.placeholder.com/10/FF6347?text=+) #FF6347 |
+| Example Color | ![#F8F8F8](https://via.placeholder.com/10/F8F8F8?text=+) #F8F8F8 |
+| Example Color | ![#000000](https://via.placeholder.com/10/000000?text=+) #000000 |
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## FAQ
 
-### `npm run build`
+#### What is your exprience to visit our website?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Answer 1
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### How can we provide you our best services?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Answer 2
 
-### `npm run eject`
+  
+## Our Website Features
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Live previews
+- Fullscreen mode
+- Cross platform
+- Full responsive 
+- react single pages application
+- user friendly
+- using Firebase and Firebase Authentication 
+- React Router
+- using Private Route
+- using Redirect Route
+- using animation 
+- using Node js for back end work
+- using Express js
+- using MongoDB as a Database
+- using React nesting Route
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Using Font ..
+- 'Krub', sans-serif
+- 'Righteous', cursive
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
+## Why It's spacial?
+- Here I use most famous javascript library react javascript
+- Also use css frame-work Bootstrap.
+- Using React-Bootstrap
+- Firebase Authentication system used for login and register in this website
+- React Router used for web pages
+- And also used Private Router for more secure those pages.
+- Full Stack Website
+- Using Node js, Express js and MongoDB for backend related work.
+- Dynamic Website
+- Here you can order your product
+- And after order some product you saw this in your order list
+- you also can delete an order
+- you can review our website in dashboard section
+- Admin can add his product
+- An admin also make another login user admin
+- An admin can delete any product
+- An admin can add new product
+- Also an admin update order status pending to shipped
+- Only admin can add a product delete a product make another user admin and mange order
+- Here I use react nesting route.
+- and payment system updated very soon 

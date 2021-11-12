@@ -1,0 +1,17 @@
+.userName{
+    margin-left: 40px;
+}
+
+.login{
+    margin-left: 40px;
+}
+
+@media (max-width: 667px){
+    .userName{
+        margin-left: 0px;
+    }
+    
+    .login{
+        margin-left: 0px;
+    }
+}

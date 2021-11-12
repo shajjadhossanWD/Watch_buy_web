@@ -1,5 +1,6 @@
 import React from 'react';
 import { ButtonGroup, Carousel } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Banner.css';
 
 const Banner = () => {
@@ -14,8 +15,10 @@ const Banner = () => {
             <Carousel.Caption className="carousel_about">
             <h1 className="text-white">THE WATCH EVERYONE</h1>
             <h1 className=" mx-auto">DESIRE</h1>
-            <p>A watch is a small clock carried or worn by a person. It makes it easy to see the time. It is also a fashion accessory for men and women, and expensive</p>
-            <ButtonGroup>SHOP NOW</ButtonGroup>
+            <p>A watch is a small clock carried or worn by a person. It makes it easy to see the time. It is also a fashion accessory </p>
+            <Link to="/all_watch">
+              <p><ButtonGroup className="banner_btn">SHOP NOW</ButtonGroup></p>
+            </Link>
             </Carousel.Caption>
         </Carousel.Item>   
         <Carousel.Item>
@@ -28,8 +31,10 @@ const Banner = () => {
             <Carousel.Caption className="carousel_about">
             <h1 className="text-white"> AN EXTRAORDINARY</h1>
             <h1 className=" mx-auto">CLASSIC</h1>
-            <p>A watch is a small clock carried or worn by a person. It makes it easy to see the time. It is also a fashion accessory for men and women, and expensive</p>
-            <ButtonGroup>SHOP NOW</ButtonGroup>
+            <p>A watch is a small clock carried or worn by a person. It makes it easy to see the time. It is also a fashion accessory </p>
+            <Link to="/all_watch">
+              <p><ButtonGroup className="banner_btn">SHOP NOW</ButtonGroup></p>
+            </Link>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -42,8 +47,10 @@ const Banner = () => {
             <Carousel.Caption className="carousel_about">
             <h1 className="text-white">WATCH FOR HIGH-TECH</h1>
             <h1 className=" mx-auto">PEOPLE</h1>
-            <p>A watch is a small clock carried or worn by a person. It makes it easy to see the time. It is also a fashion accessory for men and women, and expensive</p>
-            <ButtonGroup>SHOP NOW</ButtonGroup>
+            <p>A watch is a small clock carried or worn by a person. It makes it easy to see the time. It is also a fashion accessory </p>
+            <Link to="/all_watch">
+              <p><ButtonGroup className="banner_btn">SHOP NOW</ButtonGroup></p>
+            </Link>
             </Carousel.Caption>
         </Carousel.Item>
 </Carousel>
