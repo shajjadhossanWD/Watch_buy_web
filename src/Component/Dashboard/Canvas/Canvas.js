@@ -16,6 +16,8 @@ import ManageProducts from '../ManageProducts/ManageProducts';
 import MyOrders from '../MyOrders/MyOrders';
 import Payments from '../Payments/Payments';
 import ReviewsProducts from '../ReviewsProducts/ReviewsProducts';
+import './Canvas.css';
+
 const Canvas = () => {
     let { path, url } = useRouteMatch();
     const {logOut, admin} = useAuth();
@@ -29,27 +31,27 @@ const Canvas = () => {
         id="offcanvasNavbar"
         aria-labelledby="offcanvasNavbarLabel"
         placement="start"
-        style={{backgroundColor: 'black'}}
+        className="canvasMain"
         >
         <Offcanvas.Header closeButton>
-            <Offcanvas.Title id="offcanvasNavbarLabel" className="text-white">Dashboard</Offcanvas.Title>
+            <Offcanvas.Title id="offcanvasNavbarLabel">Menu</Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body>
+        <Offcanvas.Body className="canvasBody">
             <Nav className="justify-content-end flex-grow-1 pe-3">
-            <Nav.Link as={Link} to="/home">Home</Nav.Link>
-            <Link to={`${url}`}>Dashboards</Link>
+            <Nav.Link className="p-4 text-white" as={Link} to="/home">Home</Nav.Link>
+            <Link className="commonBtn" to={`${url}`}>Dashboards</Link>
         
             {admin ? <>
-            <Link to={`${url}/manageAllOrders`}>Manage All Orders</Link>
-            <Link to={`${url}/addProduct`}>Add A Product</Link>
-            <Link to={`${url}/makeAdmin`}>Make Admin</Link>
-            <Link to={`${url}/manageProducts`}>Manage Products</Link>
+            <Link className="menuItem" to={`${url}/manageAllOrders`}>Manage All Orders</Link>
+            <Link className="menuItem" to={`${url}/addProduct`}>Add A Product</Link>
+            <Link className="menuItem" to={`${url}/makeAdmin`}>Make Admin</Link>
+            <Link className="menuItem" to={`${url}/manageProducts`}>Manage Products</Link>
             </> 
             :
             <>
-            <Link to={`${url}/my_orders`}>My Orders</Link>
-            <Link to={`${url}/payment`}>Payments</Link>
-            <Link to={`${url}/reviews`}>Reviews</Link>
+            <Link className="menuItem" to={`${url}/my_orders`}>My Orders</Link>
+            <Link className="menuItem" to={`${url}/payment`}>Payments</Link>
+            <Link className="menuItem" to={`${url}/reviews`}>Reviews</Link>
             </>
             }
        

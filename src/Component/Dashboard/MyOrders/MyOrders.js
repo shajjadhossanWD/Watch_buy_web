@@ -39,7 +39,7 @@ const MyOrders = () => {
     return (
         <div>
            <div className="dashboard_div">
-             <h1>MY ALL ORDERS..</h1>
+             <h1 className="text-white">MY ALL ORDERS..</h1>
            </div>
             
             <div className="orders my-5 container mx-auto">

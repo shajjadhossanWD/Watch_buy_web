@@ -34,7 +34,7 @@ const MakeAdmin = () => {
             <div className="admin w-50 mx-auto my-5">
                 <h1>ADD ADMIN</h1>
                 <form onSubmit={handleAddAdmin}>
-                   <input onBlur={handleEmailBlur} type="email" placeholder="your email" className="p-2" style={{width: '90%', marginBottom: '10px'}}/>
+                   <input onBlur={handleEmailBlur} type="email" placeholder="email" className="p-2" style={{width: '90%', marginBottom: '10px'}}/>
                    <input className="buttonGrp" type="submit" name="" id="" style={{width: '90%'}}/>
                 </form>
             </div>

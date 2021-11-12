@@ -1,0 +1,30 @@
+.canvasMain{
+    width: 22%;
+}
+
+.canvasBody{
+    background-color: rgb(24, 22, 22);
+}
+.menuItem{
+    font-size: 1rem;
+    padding: 20px;
+    color: white;
+}
+.menuItem:hover{
+    background-color: #ac9061;
+    color: white;
+}
+
+.commonBtn{
+    padding: 0px 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+
+@media (max-width:667px){
+    .canvasMain{
+        width: 50%;
+    }
+}
