@@ -14,7 +14,7 @@
 }
 .cards_home{
     text-align: start;
-    margin-top: 6rem;
+    margin-top: 4rem;
     border: none;
 }
 
@@ -36,6 +36,6 @@
 
 @media (max-width: 667px){
     .cards_home{
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 }

@@ -30,8 +30,7 @@ const HomeService = () => {
                 </Card.Title>
                 <Card.Subtitle className="mb-2 text-muted fs-3">Best Services</Card.Subtitle>
                 <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                IWS is a professional watch repair service & sales company. We do repairs, services, polishing, water damage repairs & more,
                 </Card.Text>
             </Card.Body>
             </Card>
@@ -48,8 +47,7 @@ const HomeService = () => {
                 </Card.Title>
                 <Card.Subtitle className="mb-2 text-muted fs-3">Years Experience</Card.Subtitle>
                 <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                The Swiss Watch Academy is open to all people, watch amateurs as well as watch lovers, who want to live an out of this world experience,
                 </Card.Text>
             </Card.Body>
             </Card>
@@ -66,8 +64,7 @@ const HomeService = () => {
                 </Card.Title>
                 <Card.Subtitle className="mb-2 text-muted fs-3">Certified Team</Card.Subtitle>
                 <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                The ultimate security for your watch, authenticated by a watchmaker and certified by an expert. The Watch Certificate™ attests to its value.
                 </Card.Text>
             </Card.Body>
             </Card>
