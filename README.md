@@ -13,7 +13,7 @@ Using this color of our website
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | Example Color | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
-| Example Color | ![#FF6347](https://via.placeholder.com/10/FF6347?text=+) #FF6347 |
+| Example Color | ![#ac9061](https://via.placeholder.com/10/ac9061?text=+) #ac9061 |
 | Example Color | ![#F8F8F8](https://via.placeholder.com/10/F8F8F8?text=+) #F8F8F8 |
 | Example Color | ![#000000](https://via.placeholder.com/10/000000?text=+) #000000 |
 
