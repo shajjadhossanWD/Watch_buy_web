@@ -7,3 +7,5 @@ const firebaseConfig = {
     appId: "1:819097504427:web:6c7118a684f89a6c7a05ee"
   };
   export default firebaseConfig;
+
+  // .env.local file not working .......................

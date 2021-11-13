@@ -3,8 +3,16 @@
     margin-top: 10%;
 }
 
+.spinner_div_route h1, .btnHome{
+    margin-left: -39rem;
+}
+
+
 @media (max-width:625px){
     .spinner_div_route{
         margin-left: 5rem;
+    }
+    .spinner_div_route h1, .btnHome{
+        margin-left: -4.5rem;
     }
 }
