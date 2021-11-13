@@ -44,7 +44,7 @@ const useFirebase = () =>{
     // signInUsing Email and Password ----------------------
     const loginUser = (email, password, location, history) =>{
         setIsLoading(true)
-        const redirect = location?.state?.from || '/'
+        const redirect = location?.state?.from || '/dashboard'
         history.replace(redirect)
 
         signInWithEmailAndPassword(auth, email, password)
