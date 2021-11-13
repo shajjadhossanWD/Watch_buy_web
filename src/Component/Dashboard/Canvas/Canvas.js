@@ -20,7 +20,7 @@ import './Canvas.css';
 
 const Canvas = () => {
     let { path, url } = useRouteMatch();
-    const {logOut, admin} = useAuth();
+    const {logOut, admin, user} = useAuth();
     return (
     <>    
     <Navbar bg="dark" variant="dark" expand={false}>
@@ -34,7 +34,10 @@ const Canvas = () => {
         className="canvasMain"
         >
         <Offcanvas.Header closeButton>
-            <Offcanvas.Title id="offcanvasNavbarLabel">Menu</Offcanvas.Title>
+            <Offcanvas.Title id="offcanvasNavbarLabel">
+           <b className="img_p"><img src={user.photoURL} alt="user img"/></b>
+            {user.displayName}
+            </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body className="canvasBody">
             <Nav className="justify-content-end flex-grow-1 pe-3">

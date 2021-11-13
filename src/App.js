@@ -10,6 +10,7 @@ import PrivateRoute from './PrivateRoute/PrivateRoute';
 import Purchase from './Component/Purchase/Purchase';
 import Dashboard from './Component/Dashboard/Dashboard/Dashboard';
 
+
 function App() {
   return (
     <div className="App">

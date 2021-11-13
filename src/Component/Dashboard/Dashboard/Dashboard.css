@@ -5,3 +5,12 @@
     background-attachment: fixed;
     padding: 80px;
 }
+.spinner_div_order{
+    margin-left: 30rem;
+}
+
+@media (max-width:625px){
+    .spinner_div_order{
+        margin-left: 5.5rem;
+    }
+}

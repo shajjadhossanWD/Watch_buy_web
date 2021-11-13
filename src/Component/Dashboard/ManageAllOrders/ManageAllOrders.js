@@ -3,10 +3,19 @@ import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
 import ManageOrder from './ManageOrder/ManageOrder';
 import './ManageAllOrders.css';
+import GridLoader from "react-spinners/GridLoader";
+import { css } from "@emotion/react";
+
+const spinnerCss = css`
+  display: block;
+  margin-bottom: 30px;
+`;
 
 const ManageAllOrders = () => {
    const [data, setData] = useState([]);
    const [deleteOrders, setDeleteOrders]= useState()
+   let [loading] = useState(true);
+
     useEffect(()=>{
         fetch('https://floating-beach-19439.herokuapp.com/OrderedProduct')
         .then(res => res.json())
@@ -64,7 +73,7 @@ const ManageAllOrders = () => {
            </div>
            <div>
            <h1 className="my-5 cards_title"> ALL <span>ORDERED PRODUCTS</span></h1>
-           <Row xs={1} md={2} lg={3} className="g-4 container mx-auto">
+           {data.length?<Row xs={1} md={2} lg={3} className="g-4 container mx-auto">
                 {
                     data.map(manageOrder => <ManageOrder
                      key={manageOrder._id} 
@@ -74,7 +83,12 @@ const ManageAllOrders = () => {
                      ></ManageOrder>)
                 }
            </Row>
+           :
+           <div className="spinner_div_manage">
+             <GridLoader size={50} css={spinnerCss} loading={loading} color="#ac9061"/>
+           </div>}
            </div>
+           
         </div>
     );
 };

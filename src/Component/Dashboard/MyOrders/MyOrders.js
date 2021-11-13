@@ -2,11 +2,19 @@ import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
 import useAuth from '../../../Hooks/useAuth';
 import Order from './Order/Order';
+import GridLoader from "react-spinners/GridLoader";
+import { css } from "@emotion/react";
+
+const spinnerCss = css`
+  display: block;
+  margin-bottom: 30px;
+`;
 
 const MyOrders = () => {
     const [orders, setOrders] = useState([]);
     const [deleteOrders, setDeleteOrders] = useState();
     const {user} = useAuth();
+    let [loading] = useState(true);
 
     const email = user.email;
     useEffect(()=>{
@@ -44,7 +52,7 @@ const MyOrders = () => {
             
             <div className="orders my-5 container mx-auto">
                 <h1>MY ORDERS</h1>
-                <Row xs={1} md={2} lg={3} className="g-4">
+                {orders.length?<Row xs={1} md={2} lg={3} className="g-4">
                   {
                       orders.map(order => <Order 
                       key={order._id} 
@@ -54,6 +62,11 @@ const MyOrders = () => {
                       </Order>)
                   }
                 </Row>
+                :
+                 <div className="spinner_div_order">
+                 <GridLoader size={50} css={spinnerCss} loading={loading} color="#ac9061"/>
+                 </div>
+                }
             </div>
         </div>
     );

@@ -10,3 +10,12 @@
     margin: 0 0 80px0;
     background-size: cover;
 }
+.spinner_div_watch{
+    margin-left: 36rem;
+}
+
+@media (max-width:625px){
+    .spinner_div_watch{
+        margin-left: 5.5rem;
+    }
+}

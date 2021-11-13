@@ -1,13 +1,23 @@
-import React from 'react';
-import { Spinner } from 'react-bootstrap';
+import React, { useState } from 'react';
 import { Redirect, Route } from 'react-router';
 import useAuth from '../Hooks/useAuth';
+import GridLoader from "react-spinners/GridLoader";
+import { css } from "@emotion/react";
+import './PrivateRoute.css';
 
+const spinnerCss = css`
+  display: block;
+  margin-bottom: 30px;
+`;
 
 const PrivateRoute = ({children, ...rest}) => {
     const {user, isLoading} = useAuth()
+    const [loading] =useState(true);
+
     if(isLoading){
-      return <Spinner animation="border" variant="info" />
+      return <div className="spinner_div_private">
+      <GridLoader size={50} css={spinnerCss} loading={loading} color="#ac9061"/>
+      </div>
     }
     return (
         <Route

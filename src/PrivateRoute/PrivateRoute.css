@@ -1,0 +1,10 @@
+.spinner_div_private{
+    margin-left: 36rem;
+    margin-top: 10%;
+}
+
+@media (max-width:625px){
+    .spinner_div_private{
+        margin-left: 5rem;
+    }
+}
